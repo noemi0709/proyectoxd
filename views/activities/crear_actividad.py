@@ -40,6 +40,12 @@ def mostrar_crear_actividad(w: tk.Tk):
             "descripcion": entry_descripcion.get(),
             "fecha": entry_fecha.get()
         }
+        import datetime
+        try:
+            datetime.datetime.strptime(data["fecha"], "%d/%m/%y")
+        except ValueError:
+            mb.showerror("Error", "Fecha inválida. Usa formato dd/mm/yy")
+            return
         status, msg = crear_actividad(data)
         if not status:
             mb.showerror("Error", msg)

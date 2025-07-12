@@ -55,10 +55,7 @@ def mostrar_home_actividades(w: Tk):
     Label(w, image=photo, bg=BACKGROUND).grid(column=0, row=0, columnspan=6, sticky="news")
 
     # Navbar (fila 1)
-    botones = ["Servicios", "Prendas", "Actividades", "Usuarios"]
-    for index, label in enumerate(botones, start=1):
-        Button(w, text=label, font=TEXT, bg=BACKGROUND, relief="raised").grid(column=index, row=1, sticky="we")
-
+    
     # Título y botón de alta
     Label(w, text="Actividades", font=TITLES, bg=BACKGROUND).grid(column=0, row=2, columnspan=6, sticky="n")
     Button(w, text="Crear actividad", font=TEXT, bg=PRIMARY, fg=SECONDARY, relief="groove",

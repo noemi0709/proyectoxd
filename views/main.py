@@ -7,6 +7,6 @@ ventana.state("zoomed")
 
 
 ventana.iconbitmap(ICON)
-ventana.title("Lavanderia 2B")
+ventana.title("Classroom xd")
 
 
